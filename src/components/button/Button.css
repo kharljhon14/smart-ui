@@ -6,6 +6,10 @@
     font-size: 1.6rem;
 }
 
+.btn--rounded {
+    border-radius: 2rem;
+}
+
 /* Sizes */
 
 .btn--small {
@@ -21,11 +25,6 @@
 }
 
 /* End Sizes */
-
-
-.btn--rounded {
-    border-radius: 2rem;
-}
 
 /* Primary  */
 

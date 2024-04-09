@@ -4,7 +4,7 @@ import './Button.css';
 
 const Button: React.FC<ButtonProps> = ({
   testIdPrefix,
-  variant,
+  variant = 'primary',
   children,
   rounded,
   size = 'medium',
@@ -14,7 +14,6 @@ const Button: React.FC<ButtonProps> = ({
     <button
       className={`btn btn--${variant} btn--${size} ${rounded && 'btn--rounded'}`}
       data-testid={testIdPrefix}
-      disabled={props.disabled}
       {...props}
     >
       {children}
