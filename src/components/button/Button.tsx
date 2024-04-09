@@ -2,7 +2,7 @@ import { ButtonProps } from './Button.types';
 import React from 'react';
 import './Button.css';
 
-const Button: React.FC<ButtonProps> = ({ testIdPrefix, variant, ...props }) => {
+const Button: React.FC<ButtonProps> = ({ testIdPrefix, variant, children, ...props }) => {
   return (
     <button
       className={`btn btn--${variant}`}
@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({ testIdPrefix, variant, ...props }) => {
       disabled={props.disabled}
       {...props}
     >
-      Button
+      {children}
     </button>
   );
 };
