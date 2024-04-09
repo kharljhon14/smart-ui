@@ -1,25 +1,28 @@
 .btn {
-    padding: .5rem 2rem;
+    padding: .9rem 2.2rem;
     border-radius: .3rem;
     border: none;
     transition: all .4s ease;
     cursor: pointer;
+    font-size: 1.6rem;
 }
 
 .btn--primary {
-    background-color: #005AAD;
-    color: #FFF;
+    background-color: var(--color-primary-500);
+    color: var(--color-neutral-50);
 }
 
 .btn--primary:hover {
-    background-color: #004A8F;
+    background-color: var(--color-primary-600);
+    ;
 }
 
 .btn--primary:active {
-    color: #8ABEEF;
+    color: var(--color-primary-100);
+    ;
 }
 
 .btn--primary:disabled {
-    background-color: #BCD9F6;
+    background-color: var(--color-primary-100);
     pointer-events: none;
 }
