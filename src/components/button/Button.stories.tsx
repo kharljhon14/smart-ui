@@ -23,3 +23,17 @@ export const Secondary: Story = {
     testIdPrefix: 'button'
   }
 };
+
+export const Tertiary: Story = {
+  args: {
+    variant: 'tertiary',
+    testIdPrefix: 'button'
+  }
+};
+
+export const Danger: Story = {
+  args: {
+    variant: 'danger',
+    testIdPrefix: 'button'
+  }
+};

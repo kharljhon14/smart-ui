@@ -1,6 +1,6 @@
 .btn {
     padding: .9rem 2.2rem;
-    border-radius: .3rem;
+    border-radius: .5rem;
     border: none;
     transition: all .4s ease;
     cursor: pointer;
@@ -8,6 +8,7 @@
 }
 
 /* Primary  */
+
 .btn--primary {
     background-color: var(--color-primary-500);
     color: var(--color-neutral-50);
@@ -29,6 +30,7 @@
 /* End Primary */
 
 /* Secondary */
+
 .btn--secondary {
     background-color: var(--color-primary-50);
     color: var(--color-primary-500);
@@ -51,3 +53,49 @@
 }
 
 /* End Secondary */
+
+/* Tertiary */
+
+.btn--tertiary {
+    background-color: #FFF;
+    border: 1px solid var(--color-neutral-200);
+    color: var(--color-neutral-700);
+}
+
+.btn--tertiary:hover {
+    background-color: var(--color-neutral-100);
+}
+
+.btn--tertiary:active {
+    color: var(--color-neutral-600);
+    background-color: var(--color-neutral-400);
+    border-color: var(--color-neutral-600);
+}
+
+.btn--tertiary:disabled {
+    color: var(--color-neutral-400);
+    pointer-events: none;
+}
+
+/* End Tertiary */
+
+/* Danger */
+.btn--danger {
+    background-color: var(--color-danger-500);
+    color: #FFF
+}
+
+.btn--danger:hover {
+    background-color: var(--color-danger-600);
+}
+
+.btn--danger:active {
+    color: var(--color-danger-200);
+}
+
+.btn--danger:disabled {
+    background-color: var(--color-danger-300);
+    pointer-events: none;
+}
+
+/* End Danger */
