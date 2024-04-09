@@ -7,6 +7,7 @@
     font-size: 1.6rem;
 }
 
+/* Primary  */
 .btn--primary {
     background-color: var(--color-primary-500);
     color: var(--color-neutral-50);
@@ -14,15 +15,39 @@
 
 .btn--primary:hover {
     background-color: var(--color-primary-600);
-    ;
 }
 
 .btn--primary:active {
     color: var(--color-primary-100);
-    ;
 }
 
 .btn--primary:disabled {
     background-color: var(--color-primary-100);
     pointer-events: none;
 }
+
+/* End Primary */
+
+/* Secondary */
+.btn--secondary {
+    background-color: var(--color-primary-50);
+    color: var(--color-primary-500);
+}
+
+.btn--secondary:hover {
+    background-color: var(--color-primary-100);
+    color: var(--color-primary-600);
+
+}
+
+.btn--secondary:active {
+    color: var(--color-primary-300);
+}
+
+.btn--secondary:disabled {
+    color: var(--color-primary-300);
+    background-color: var(--color-primary-50);
+    pointer-events: none;
+}
+
+/* End Secondary */
