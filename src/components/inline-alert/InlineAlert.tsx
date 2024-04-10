@@ -11,7 +11,6 @@ const InlineAlert: React.FC<InlineAlertProps> = ({
   testIdPrefix,
   children
 }) => {
-  const handleClose = () => {};
   return (
     <>
       {open && (

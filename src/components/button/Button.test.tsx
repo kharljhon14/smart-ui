@@ -1,10 +1,11 @@
 import { render, screen, fireEvent } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Button from './Button';
 import React from 'react';
 
 describe('Button', () => {
-  test('Renders the Button component', () => {
+  test('Renders Button component', () => {
     render(
       <Button
         testIdPrefix="button"
@@ -13,7 +14,9 @@ describe('Button', () => {
         Button
       </Button>
     );
-    expect(screen.getByTestId('button').innerHTML).toEqual('Button');
+
+    expect(screen.getByTestId('button')).toBeInTheDocument();
+    expect(screen.getByTestId('button').textContent).toEqual('Button');
   });
 
   test('Disabled Button component', () => {
