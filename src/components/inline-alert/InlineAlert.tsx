@@ -6,22 +6,29 @@ import './InlineAlert.css';
 const InlineAlert: React.FC<InlineAlertProps> = ({
   title,
   variant = 'primary',
+  open = true,
+  close,
   testIdPrefix,
   children
 }) => {
+  const handleClose = () => {};
   return (
-    <div
-      data-testid={testIdPrefix}
-      className={`inline-alert inline-alert--${variant}`}
-    >
-      <div className="inline-alert__header">
-        <h1>{title}</h1>
-        <button>
-          <MdClose />
-        </button>
-      </div>
-      {children}
-    </div>
+    <>
+      {open && (
+        <div
+          data-testid={testIdPrefix}
+          className={`inline-alert inline-alert--${variant}`}
+        >
+          <div className="inline-alert__header">
+            <h1>{title}</h1>
+            <button onClick={close}>
+              <MdClose />
+            </button>
+          </div>
+          {children}
+        </div>
+      )}
+    </>
   );
 };
 
