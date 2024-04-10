@@ -2,6 +2,9 @@ import { ButtonProps } from './Button.types';
 import React from 'react';
 import './Button.css';
 
+/**
+ * Button component that extends the properties of the html button tag
+ */
 const Button: React.FC<ButtonProps> = ({
   testIdPrefix,
   variant = 'primary',

@@ -3,7 +3,7 @@ import InlineAlert from './InlineAlert';
 import { fn } from '@storybook/test';
 
 const meta = {
-  title: 'Components/Inline-Alert',
+  title: 'Components/Inline Alert',
   parameters: {
     layout: 'centered'
   },
