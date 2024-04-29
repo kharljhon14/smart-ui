@@ -23,5 +23,5 @@ export interface InlineAlertProps {
    */
   close: () => void;
 
-  testIdPrefix: String;
+  testIdPrefix?: String;
 }

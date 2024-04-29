@@ -12,5 +12,5 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, Pr
   size?: 'small' | 'medium' | 'large';
   disabled?: boolean;
   rounded?: boolean;
-  testIdPrefix: string;
+  testIdPrefix?: string;
 }

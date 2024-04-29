@@ -3,16 +3,21 @@ import React from 'react';
 import { ModalProps } from './Modal.types';
 import './Modal.css';
 
-const Modal: React.FC<ModalProps> = ({ title, open, close, children }) => {
+const Modal: React.FC<ModalProps> = ({ title, open, close, testIdPrefix, children }) => {
   return (
-    <div className="modal">
-      <div className="modal__header">
-        <h1>{title}</h1>
-        <button>
-          <IoMdClose />
-        </button>
+    <div
+      data-testid={testIdPrefix}
+      className={`modal__wrapper ${!open && 'modal--close'}`}
+    >
+      <div className="modal">
+        <div className="modal__header">
+          <h1>{title}</h1>
+          <button onClick={close}>
+            <IoMdClose />
+          </button>
+        </div>
+        {children}
       </div>
-      {children}
     </div>
   );
 };
