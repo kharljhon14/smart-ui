@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IoChevronDown } from 'react-icons/io5';
 import { AccordionProps } from './Accordion.types';
 import './Accordion.css';
@@ -10,14 +10,21 @@ export const Accordion: React.FC<AccordionProps> = ({
   disabled,
   children
 }) => {
+  const [isOpen, setIsOpen] = useState(open);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div
       className="accordion__container"
-      data-state={open ? 'open' : 'close'}
+      data-state={isOpen ? 'open' : 'close'}
     >
       <button
         className="accordion__button"
         disabled={disabled}
+        onClick={handleToggle}
       >
         <IoChevronDown className="accordion__arrow" />
         <div className="accordion__header">

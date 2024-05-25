@@ -14,13 +14,10 @@ export interface AccordionProps {
    */
   children?: ReactNode | undefined;
   /**
-   * The state of the component
+   * Set the state to be open on start
    */
   open: boolean;
-  /**
-   *  Click handler for closing the component
-   */
-  close: () => void;
+
   disabled?: boolean;
 
   testIdPrefix?: String;

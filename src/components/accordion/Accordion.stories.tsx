@@ -5,8 +5,7 @@ import { fn } from '@storybook/test';
 const meta = {
   title: 'Components/Accordion',
   component: Accordion,
-  tags: ['autodocs'],
-  args: { close: fn() }
+  tags: ['autodocs']
 } satisfies Meta<typeof Accordion>;
 
 export default meta;
