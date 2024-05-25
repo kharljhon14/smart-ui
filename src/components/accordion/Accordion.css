@@ -17,6 +17,12 @@
         font-size: 2rem;
         border-bottom: 1px solid var(--color-primary-100);
 
+
+        & .accordion__arrow {
+            transform: rotateX(180deg);
+            transition: all .4s ease;
+        }
+
         & .accordion__header {
             margin-right: auto;
             margin-left: 4rem;
@@ -31,8 +37,8 @@
     }
 
     & .accordion__content {
+        transition: padding-top .4s ease, padding-bottom .4s ease;
         padding: 2rem;
-        height: 20rem;
         background-color: #FFF;
     }
 }
@@ -41,10 +47,16 @@
 
     & .accordion__button {
         border-bottom: none;
+
+        & .accordion__arrow {
+            transform: rotateX(0deg);
+        }
+
     }
 
     & .accordion__content {
-        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
         height: 0;
     }
 }

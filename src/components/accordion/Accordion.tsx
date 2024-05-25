@@ -10,12 +10,12 @@ export const Accordion: React.FC<AccordionProps> = ({ title, subtitle, open, chi
       data-state={open ? 'open' : 'close'}
     >
       <button className="accordion__button">
-        <IoChevronDown />
+        <IoChevronDown className="accordion__arrow" />
         <div className="accordion__header">
           <h1>{title}</h1>
           <span>{subtitle}</span>
         </div>
-        <IoChevronDown />
+        <IoChevronDown className="accordion__arrow" />
       </button>
       <div className="accordion__content">{children}</div>
     </div>
