@@ -28,13 +28,30 @@
         align-items: center;
         justify-content: space-between;
 
+        & .modal__header-title {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+
+            & .modal__header-title-icon {
+                margin-right: 2rem;
+                background-color: var(--color-neutral-200);
+                border-radius: 100%;
+                height: 3rem;
+                width: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
         & h1 {
             font-size: 1.8rem;
             font-weight: 600;
         }
 
         & button {
-            border: 2px solid var(--color-neutral-600);
+            border: 1px solid var(--color-neutral-600);
             border-radius: 100%;
             height: 2.8rem;
             width: 2.8rem;
@@ -43,7 +60,68 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--color-neutral-600);
+        }
+    }
+
+    & .modal--variant--neutral {
+
+        & .modal__header-title {
+            color: var(--color-neutral-500);
+
+            & h1 {
+                color: var(--color-neutral-900);
+
+            }
+        }
+
+        & button {
+            border-color: var(--color-primary-100);
+            color: var(--color-primary-500);
+        }
+    }
+
+    & .modal--variant--primary {
+
+        & .modal__header-title {
+            color: var(--color-primary-500);
+        }
+
+        & button {
+            border-color: var(--color-primary-100);
+            color: var(--color-primary-500);
+        }
+    }
+
+    & .modal--variant--success {
+        & .modal__header-title {
+            color: var(--color-success-500);
+        }
+
+        & button {
+            border-color: var(--color-success-100);
+            color: var(--color-success-500);
+        }
+    }
+
+    & .modal--variant--warning {
+        & .modal__header-title {
+            color: var(--color-warning-500);
+        }
+
+        & button {
+            border-color: var(--color-warning-100);
+            color: var(--color-warning-500);
+        }
+    }
+
+    & .modal--variant--danger {
+        & .modal__header-title {
+            color: var(--color-danger-500);
+        }
+
+        & button {
+            border-color: var(--color-danger-100);
+            color: var(--color-danger-500);
         }
     }
 }

@@ -6,7 +6,6 @@ import { fn } from '@storybook/test';
 const meta = {
   title: 'Components/Modal',
   tags: ['autodocs'],
-
   component: Modal,
   args: { close: fn() }
 } satisfies Meta<ModalProps>;
