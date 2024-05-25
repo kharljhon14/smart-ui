@@ -3,9 +3,12 @@ import { IoChevronDown } from 'react-icons/io5';
 import { AccordionProps } from './Accordion.types';
 import './Accordion.css';
 
-export const Accordion: React.FC<AccordionProps> = ({ title, subtitle, children }) => {
+export const Accordion: React.FC<AccordionProps> = ({ title, subtitle, open, children }) => {
   return (
-    <div className="accordion__container">
+    <div
+      className="accordion__container"
+      data-state={open ? 'open' : 'close'}
+    >
       <button className="accordion__button">
         <IoChevronDown />
         <div className="accordion__header">

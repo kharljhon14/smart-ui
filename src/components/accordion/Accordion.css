@@ -4,6 +4,7 @@
     background-color: var(--color-primary-50);
     overflow: hidden;
 
+
     & .accordion__button {
         background: transparent;
         border: none;
@@ -31,6 +32,19 @@
 
     & .accordion__content {
         padding: 2rem;
+        height: 20rem;
         background-color: #FFF;
+    }
+}
+
+.accordion__container[data-state="close"] {
+
+    & .accordion__button {
+        border-bottom: none;
+    }
+
+    & .accordion__content {
+        padding: 0;
+        height: 0;
     }
 }
