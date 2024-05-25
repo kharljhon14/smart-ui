@@ -20,7 +20,7 @@
 
         & .accordion__arrow {
             transform: rotateX(180deg);
-            transition: all .4s ease;
+            transition: transform .4s ease;
         }
 
         & .accordion__header {
