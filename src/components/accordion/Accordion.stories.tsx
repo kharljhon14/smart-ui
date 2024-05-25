@@ -17,6 +17,7 @@ export const Example: Story = {
     title: 'Headline',
     subtitle: 'Supporting text line',
     children: 'Insert text here',
-    open: true
+    open: true,
+    testIdPrefix: 'accordion'
   }
 };

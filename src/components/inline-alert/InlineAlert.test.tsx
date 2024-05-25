@@ -5,7 +5,7 @@ import React from 'react';
 import InlineAlert from './InlineAlert';
 
 describe('InlineAlert', () => {
-  test('Renders Button component', () => {
+  test('Renders Inline Alert component', () => {
     const open = true;
     render(
       <InlineAlert

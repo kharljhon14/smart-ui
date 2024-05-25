@@ -8,6 +8,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   subtitle,
   open,
   disabled,
+  testIdPrefix,
   children
 }) => {
   const [isOpen, setIsOpen] = useState(open);
@@ -20,6 +21,7 @@ export const Accordion: React.FC<AccordionProps> = ({
     <div
       className="accordion__container"
       data-state={isOpen ? 'open' : 'close'}
+      data-testid={testIdPrefix}
     >
       <button
         className="accordion__button"
